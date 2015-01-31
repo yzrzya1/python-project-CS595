@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ head }}</title>
+</head>
+
+        <body>
+                        <h1>Welcome to you</h1>
+                        <h3>{{ name }}</h3>
+                                <table>
+                                <tr>
+                                        <th>name</th>
+                                        <th>age</th>
+                                <tr>
+                                {% for p in listdata %}
+                                        <tr>
+                                                <td>{{ p.username }}</td>
+                                                <td>{{ p.age }}</td>
+                                        </tr>
+                                {% endfor %}
+                                </table>
+        </body>
+</html>
